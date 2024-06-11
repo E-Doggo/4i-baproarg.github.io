@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin-left: 90; margin-top: 100; color: blue; font-size: 44">
+      Prueba CASO D PROD (solo liveness)
+    </div>
+    <form
+      name="FormName"
+      id="FormName"
+      method="post"
+      target="_self"
+      action="https://admin.4i4id.com:3443/epagswb/home-high"
+    >
+      <input
+        type="hidden"
+        name="apikey"
+        value="AR_INTEGR_WB"
+        placeholder="Ingrese apikey"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="hidden"
+        name="idapp"
+        value="AppCliente"
+        placeholder="Ingrese idapp"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="text"
+        name="seckey"
+        placeholder="Ingrese seckey"
+        value="YTcwNGFjNGQtNjllYi00ODFlLWI4MjItMDViYzkwYmE2MTEx"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="hidden"
+        name="country"
+        value="ARG"
+        placeholder="Ingrese country"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="hidden"
+        name="idmaqc_service"
+        value="ONBOARDING_DIGITALPLATFORM"
+        placeholder="Ingrese idmaqc services"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="hidden"
+        name="profile_services"
+        value="ONBOARDING_DIGITALPLATFORM"
+        placeholder="Ingrese profile_services"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="hidden"
+        name="services"
+        value="ONBOARDING_DIGITALPLATFORM"
+        placeholder="Ingrese services"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="text"
+        name="externaltxid"
+        id="externaltxid"
+        placeholder="Ingrese external_id"
+        value="myCustom_tx_id"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="text"
+        name="citizenid"
+        value=""
+        placeholder="Ingrese citizen_id"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="text"
+        name="dni"
+        value=""
+        placeholder="Ingrese dni"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <input
+        type="text"
+        name="sexo"
+        value="F"
+        placeholder="Ingrese sexo"
+        style="
+          width: 940;
+          height: 110;
+          margin-left: 10;
+          margin-top: 10;
+          font-size: 33px;
+          border-style: solid;
+        "
+      />
+      <label for="male">
+        <input
+          type="radio"
+          name="mode"
+          style="width: 60; height: 200"
+          checked
+          value="ONB"
+          onchange="handleChange(this); "
+        />
+        <span style="width: 80; height: 1110; margin-left: 50; font-size: 50px">
+          ONB
+        </span> </label
+      ><br />
+      <label for="female">
+        <input
+          type="radio"
+          style="width: 60; height: 200"
+          name="mode"
+          value="AUTH"
+          onchange="handleChange(this);"
+        />
+        <span style="width: 80; height: 1110; margin-left: 50; font-size: 50px">
+          AUTH
+        </span>
+      </label>
+      <br />
+
+      <strong>
+        <button
+          style="
+            width: 940;
+            height: 110;
+            margin-left: 10;
+            margin-top: 100;
+            border-radius: 100px;
+            color: white;
+            background-color: #0000ff;
+          "
+          type="submit"
+        >
+          <h1>COMENZAR</h1>
+        </button>
+      </strong>
+    </form>
+
+    <script>
+      window.onload = function () {
+        let ms = Date.now();
+        document.getElementById("externaltxid").value =
+          "ClaroPROD_CASO_D_" + ms;
+      };
+    </script>
+  </body>
+</html>
